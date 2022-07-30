@@ -1,0 +1,126 @@
+.header .navbar {
+    justify-content: space-between;
+}
+
+.header .navbar-collapse {
+    max-width: 78%;
+}
+
+.header .navbar-nav {
+    width: 70%;
+    justify-content: space-between;
+}
+
+.header .nav-link {
+    color: #000;
+    font-weight: 300;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.show {
+        color: $main-color;
+
+        & ~ .dropdown-menu {
+            display: block;
+        }
+    }
+}
+
+.header .dropdown-toggle::after {
+    display: none;
+}
+
+.header .dropdown-menu {
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.082);
+    border-radius: 0px 0px 12px 12px;
+    border: none;
+
+    &:hover {
+        display: block;
+    }
+}
+
+.header .dropdown-item {
+    font-weight: 300;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent;
+        color: $main-color;
+    }
+}
+
+.header__buttons button {
+    font-size: 20px;
+}
+
+.header__buttons .no-btn {
+    font-weight: 300;
+    padding: 9px 23px 10px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $main-color;
+        text-shadow: 0 0 2px $main-color;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header .navbar-brand {
+        width: 15%;
+    }
+    .header .navbar-collapse {
+        max-width: 80%;
+    }
+    .header .navbar-nav {
+        width: 60%;
+    }
+    .header__buttons button,
+    .header .nav-link {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header .navbar-brand {
+        width: 150px;
+    }
+    .header .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 22px;
+        height: 19px;
+        background-color: transparent;
+        padding: 0;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        & span {
+            transition: 0.8s;
+            width: 100%;
+            height: 2px;
+            background-color: $main-color;
+        }
+
+        &:not(.collapsed) {
+            & span {
+                background-color: #A4A4A4;
+            }
+            & span:nth-of-type(1) {
+                transform: rotate(45deg) translate(1px, -1px);
+            }
+            & span:nth-of-type(2) {
+                transform: scale(0);
+            }
+            & span:nth-of-type(3) {
+                transform: rotate(-45deg) translate(12px, -10px);
+            }
+        }
+    }
+}

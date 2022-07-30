@@ -1,0 +1,104 @@
+.user-modal {
+    width: 788px;
+    max-width: 98%;
+
+    & .modal-content {
+        box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.45);
+        border-radius: 20px;
+        border: none;
+    }
+
+    & .modal-header {
+        border: none;
+    }
+
+    & .modal-title {
+        font-weight: 400;
+        font-size: 28px;
+        text-transform: uppercase;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    & .modal-footer {
+        justify-content: center;
+        border: none;
+        padding: 0;
+        margin: 60px 0;
+
+        & button {
+            padding: 11px;
+            width: 155px;
+            font-size: 21px;
+            text-transform: inherit;
+            margin: 0 25px;
+        }
+    }
+}
+
+.user-modal__form {
+    width: 80%;
+    margin: 0 auto;
+
+    & .input {
+        width: 100%;
+    }
+}
+
+.user-modal__item {
+    margin-bottom: 22px;
+}
+
+.user-modal__link {
+    display: block;
+    color: $main-color;
+    margin: 11px auto;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #000
+    }
+}
+
+.user-modal__footer {
+    text-align: center;
+    margin-bottom: 30px;
+
+    & .button {
+        width: 300px;
+    }
+}
+
+.user-modal__singout {
+    width: 441px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+.show-password {
+    padding: 0;
+    margin: -42px 20px 42px auto;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+    background: url(../img/eye-slashed.svg) center no-repeat;
+}
+
+.show-password.open {
+    background-image: url(../img/eye.svg);
+}

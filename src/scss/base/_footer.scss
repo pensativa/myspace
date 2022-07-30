@@ -1,0 +1,134 @@
+.footer__info {
+    background: #202020;
+    padding: 48px 0 28px;
+    color: #fff;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.footer__subscribe {
+    width: 640px;
+    text-align: center;
+
+    & p {
+        margin-bottom: 10px;
+    }
+}
+
+.footer__form {
+    margin-top: 28px;
+}
+
+.footer__contacts {
+    width: 290px;
+}
+
+.footer__address {
+    margin-bottom: 10px;
+    background-image: url('../img/place.svg');
+}
+
+.footer__address,
+.footer__phone,
+.footer__email {
+    padding-left: 26px;
+    background-repeat: no-repeat;
+    background-position: top 4px left;
+
+}
+
+.footer__phone,
+.footer__email {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $main-color;
+    }
+}
+
+.footer__phone {
+    background-image: url('../img/phone.svg');
+}
+
+.footer__email {
+    background-image: url('../img/email.svg');
+}
+
+.footer__copyright {
+    background: #808080;
+    color: #fff;
+    padding: 22px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 1400px) {
+    .footer__logo {
+        width: 260px;
+    }
+    .footer__subscribe {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer__info .container {
+        font-size: 17px;
+    }
+    .footer__logo {
+        width: 220px;
+    }
+    .footer__subscribe {
+        width: 390px;
+    }
+    .footer__contacts {
+        width: 245px;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer__logo {
+        width: 170px;
+    }
+    .footer__subscribe {
+        width: 280px;
+    }
+    .footer__contacts {
+        width: 235px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__info .container {
+        font-size: 16px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .footer__logo {
+        width: 80%;
+        min-width: 170px;
+    }
+    .footer__subscribe {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footer__contacts {
+        margin-top: 20px;
+        width: 240px;
+    }
+    .footer__email, .footer__phone {
+        background-size: auto 16px;
+    }
+    .footer__copyright {
+        font-size: 13px;
+        text-align: center;
+    }
+}

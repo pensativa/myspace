@@ -1,0 +1,26 @@
+.banner {
+    padding: 235px 0;
+    background: $main-color url('../img/main-bg.webp') no-repeat center/cover;
+    color: #fff;
+    min-height: 963px;
+}
+
+.banner__title {
+    font-weight: 700;
+    font-size: 57px;
+    margin-bottom: 20px;
+    max-width: 830px;
+}
+
+.banner__text {
+    max-width: 830px;
+
+    &::after {
+        content: '';
+        width: 95px;
+        height: 3px;
+        background-color: $main-color;
+        display: block;
+        margin-top: 22px;
+    }
+}
