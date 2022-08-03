@@ -1,0 +1,110 @@
+.filter__form {
+    display: flex;
+    flex-direction: column;
+}
+.filter--front {
+    margin-bottom: 54px;
+
+    & .filter__form {
+        box-shadow: $box-shadow;
+        padding: 16px 22px 29px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    & .filter__form-item {
+        width: 32%;
+    }
+
+    & .filter__form-item:first-child {
+        width: 89%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 29px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid rgba(#707070, 0.2);
+    }
+
+    & .filter__button {
+        margin-top: 47px;
+        width: 300px;
+    }
+}
+
+.filter--front__title {
+    font-weight: 700;
+    font-size: 57px;
+}
+
+.filter__form-name {
+    font-weight: 600;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.filter__form-radios input {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: -100;
+}
+
+.filter__form-radios input + label,
+.filter__form-radios input:not(:checked) + label {
+    border: 1px solid #000;
+    padding: 3px 17px;
+    min-width: 77px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 19px;
+    opacity: 0.32;
+    transition: 0.5s;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+            background-color: $main-color;
+            border-color: $main-color;
+            opacity: 1;
+        }
+}
+
+.filter__form-radios input:checked + label {
+    color: #fff;
+    background-color: $main-color;
+    border-color: $main-color;
+    opacity: 1;
+}
+
+.filter__input {
+    background: #F7F7F7;
+    padding: 10px 20px 11px;
+    font-weight: 300;
+    width: 464px;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+
+    &::placeholder {
+        color: #949494;
+    }
+}
+
+.filter__form-price {
+    margin-top: 30px;
+}
+
+.filter__form-price .filter__input {
+    width: 48%;
+    margin-right: 1%;
+}
+
+//arrow-range
