@@ -76,9 +76,22 @@ const rangeBg = function() {
     if(!range) {
         return;
     }
-    range.onchange = function() {
-        let val = range.val();
-        range.setAttribute('style', 'background:linear-gradient(to right, #D57800 0%, #D57800 ' + val + '%, #D57800 ' + val + '%,  rgba(245, 245, 245, 0.6) 100%)');
+    let rangeMaxValue = document.querySelector('.filter__range').max;
+    const fillRange = document.querySelector('.filter__range-fill')
+    range.oninput = function() {
+        let val = (range.value / rangeMaxValue) * 100;
+        fillRange.style.background = 'linear-gradient(to right, #D57800 0%, #D57800 ' + val + '%, #707070 ' + val + '%,  #707070 100%)';
     }
 };
 rangeBg();
+
+const showMobileFilter = function() {
+    const toggle = document.querySelector('.filter--front');
+    if(!toggle) {
+        return;
+    }
+    toggle.onclick = function() {
+        toggle.classList.toggle('show');
+    }
+}
+showMobileFilter();

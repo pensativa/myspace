@@ -107,16 +107,34 @@
     margin-right: 1%;
 }
 
+.filter__form-range {
+    position: relative;
+}
+
 .filter__range {
     width: 100%;
     height: 40px;
     accent-color: $main-color;
     -webkit-appearance: none;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background: transparent;
+    z-index: 1;
+}
+
+.filter__range-fill {
+    background: #707070;
+    opacity: .2;
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px
 }
   
   /*progress support*/
   .filter__range.slider-progress {
-    background-color: $main-color; 
+    background-color: transparent; 
   }
   
   .filter__range:focus {
@@ -138,7 +156,7 @@
     height: 20px;
     border: none;
     border-radius: 10px;
-    background: rgba(245, 245, 245, 0.6);
+    background: transparent;
     box-shadow: none;
   }
   
@@ -147,7 +165,7 @@
   }
   
   input[type=range].filter__range:hover::-webkit-slider-runnable-track {
-    background: rgba(245, 245, 245, 0.6);
+    background: transparent;
   }
   
   input[type=range].filter__range::-webkit-slider-thumb:active {
@@ -155,19 +173,19 @@
   }
   
   input[type=range].filter__range:active::-webkit-slider-runnable-track {
-    background: rgba(245, 245, 245, 0.6);
+    background: transparent;
   }
   
   input[type=range].filter__range.slider-progress::-webkit-slider-runnable-track {
-    background: $main-color;
+    background: transparent;
   }
   
   input[type=range].filter__range.slider-progress:hover::-webkit-slider-runnable-track {
-    background: $main-color;
+    background: transparent;
   }
   
   input[type=range].filter__range.slider-progress:active::-webkit-slider-runnable-track {
-    background: $main-color;
+    background: transparent;
   }
   
   /*mozilla*/
@@ -184,7 +202,7 @@
     height: 20px;
     border: none;
     border-radius: 10px;
-    background: rgba(245, 245, 245, 0.6);
+    background: transparent;
     box-shadow: none;
   }
   
@@ -193,7 +211,7 @@
   }
   
   input[type=range].filter__range:hover::-moz-range-track {
-    background: rgba(245, 245, 245, 0.6);
+    background: transparent;
   }
   
   input[type=range].filter__range::-moz-range-thumb:active {
@@ -201,19 +219,19 @@
   }
   
   input[type=range].filter__range:active::-moz-range-track {
-    background: rgba(245, 245, 245, 0.6);
+    background: transparent;
   }
   
   input[type=range].filter__range.slider-progress::-moz-range-track {
-    background: $main-color;
+    background: transparent;
   }
   
   input[type=range].filter__range.slider-progress:hover::-moz-range-track {
-    background: $main-color;
+    background: transparent;
   }
   
   input[type=range].filter__range.slider-progress:active::-moz-range-track {
-    background: $main-color;
+    background: transparent;
   }
   
   /*ms*/
@@ -241,7 +259,7 @@
   input[type=range].filter__range::-ms-track {
     height: 20px;
     border-radius: 10px;
-    background: rgba(245, 245, 245, 0.6);
+    background: transparent;
     border: none;
     box-shadow: none;
     box-sizing: border-box;
@@ -252,7 +270,7 @@
   }
   
   input[type=range].filter__range:hover::-ms-track {
-    background: rgba(245, 245, 245, 0.6);
+    background: transparent;
   }
   
   input[type=range].filter__range::-ms-thumb:active {
@@ -260,24 +278,22 @@
   }
   
   input[type=range].filter__range:active::-ms-track {
-    background: rgba(245, 245, 245, 0.6);
+    background: transparent;
   }
   
   input[type=range].filter__range.slider-progress::-ms-fill-lower {
     height: 20px;
-    border-radius: 10px 0 0 10px;
-    margin: -undefined 0 -undefined -undefined;
-    background: #D57800;
+    background: transparent;
     border: none;
     border-right-width: 0;
   }
   
   input[type=range].filter__range.slider-progress:hover::-ms-fill-lower {
-    background: #D57800;
+    background: transparent;
   }
   
   input[type=range].filter__range.slider-progress:active::-ms-fill-lower {
-    background: #D57800;
+    background: transparent;
   }
   
 //arrow-range
@@ -289,6 +305,34 @@
 }
 
 @media (max-width: 992px) {
+    .filter--front .filter__form {
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 10;
+        display: none;
+    }
+    .filter--front.show .filter__form {
+        display: flex;
+    }
+    .filter--front {
+        background-color: $main-color;
+        position: relative;
+        margin-bottom: 25px;
+
+        &::after {
+            content: 'Advanced Search';
+            font-family: inherit;
+            font-size: 13px;
+            color: #fff;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            padding: 11px 0 13px;
+        }
+    }
     .filter--front .filter__form,
     .filter--front .filter__form-item:first-child {
         flex-direction: column;
@@ -301,5 +345,9 @@
         width: 170px;
         margin: 20px auto 0;
         display: block;
+    }
+    .filter--front__title {
+        font-size: 32px;
+        margin-bottom: 14px;
     }
 }
