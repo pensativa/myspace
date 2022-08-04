@@ -96,3 +96,25 @@
         transition: 0.5s;
     }
 }
+
+@media (max-width: 1400px) {
+    .main-category__items {
+        grid-gap: 30px;
+    }
+    .main-category__item-title {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-category__items {
+        grid-gap: 10px;
+        min-height: 430px;
+    }
+    .main-category__item a {
+        padding: 10px;
+    }
+    .main-category__item-title {
+        font-size: 32px;
+    }
+}

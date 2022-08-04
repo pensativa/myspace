@@ -69,3 +69,16 @@ const buttonMakeActive = function() {
     });
 }
 buttonMakeActive();
+
+//Filter scripts 
+const rangeBg = function() {
+    const range = document.querySelector('.filter__range');
+    if(!range) {
+        return;
+    }
+    range.onchange = function() {
+        let val = range.val();
+        range.setAttribute('style', 'background:linear-gradient(to right, #D57800 0%, #D57800 ' + val + '%, #D57800 ' + val + '%,  rgba(245, 245, 245, 0.6) 100%)');
+    }
+};
+rangeBg();

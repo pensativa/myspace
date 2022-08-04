@@ -1,8 +1,8 @@
 .banner {
-    padding: 235px 0;
+    padding: 235px 0 0;
     background: $main-color url('../img/main-bg.webp') no-repeat center/cover;
     color: #fff;
-    min-height: 963px;
+    min-height: calc(100vh - 97px);
     margin-bottom: 60px;
 }
 
@@ -23,5 +23,18 @@
         background-color: $main-color;
         display: block;
         margin-top: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner {
+        padding: 50px 0 0;
+        min-height: calc(100vh - 79px - 40px);
+        margin-bottom: 0;
+    }
+    .banner__title {
+        font-size: 39px;
+        margin-bottom: 10px;
+        max-width: 313px;
     }
 }
