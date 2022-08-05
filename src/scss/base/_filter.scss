@@ -302,6 +302,17 @@
   input[type=range].filter__range.slider-progress:active::-ms-fill-lower {
     background: transparent;
   }
+
+.filter__range-val {
+  color: #949494;
+  font-weight: 300;
+  list-style: none;
+  padding-left: 0;
+
+  & li:not(:first-of-type) {
+    display: none;
+  }
+}
   
 
 .filter__front-toggle {
@@ -350,7 +361,8 @@
         margin-right: 12px;
       }
     }
-    .filter--front.show .filter__front-toggle {
+    .filter--front.show .filter__front-toggle,
+    .catalog__banner.show .filter__front-toggle {
       font-size: 0;
       position: absolute;
       top: 28px;

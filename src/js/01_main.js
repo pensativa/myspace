@@ -100,10 +100,13 @@ const rangeBg = function() {
 rangeBg();
 
 const showMobileFilter = function() {
-    const toggleArea = document.querySelector('.filter--front');
+    let toggleArea = document.querySelector('.filter--front');
     const toggle = document.querySelector('.filter__front-toggle');
     if(!toggle) {
         return;
+    }
+    if(!toggleArea) {
+        toggleArea = document.querySelector('.catalog__banner');
     }
     toggle.onclick = function() {
         toggleArea.classList.toggle('show');

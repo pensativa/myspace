@@ -1,3 +1,67 @@
+.catalog__banner {
+    background-color: $main-color;
+    @include bg-img('../img/catalog-bg.webp');
+    padding: 30px 0;
+    margin-bottom: 64px;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    & .filter__form {
+        width: 512px;
+        background-color: #fff;
+        box-shadow: $box-shadow;
+        border-radius: 5px;
+        padding: 24px;
+    }
+
+    & .filter__form-item {
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+    }
+
+    & #cities {
+        margin-top: 20px;
+    }
+
+    & .filter__button {
+        width: 300px;
+        margin: 30px auto 0;
+    }
+}
+
+.catalog__banner-text {
+    flex: 0 1 50%;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 130px;
+}
+
+.catalog__banner-title {
+    font-weight: 700;
+    font-size: 57px;
+    margin-bottom: 15px;
+}
+
+.catalog__subtitle {
+    font-weight: 700;
+    font-size: 57px;
+    margin-bottom: 22px;
+    color: #fff;
+}
+
+.catalog__list-title {
+    font-weight: 700;
+    font-size: 57px;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
 .catalog {
     display: flex;
     flex-wrap: wrap;
@@ -192,6 +256,45 @@
     }
     .catalog__footer-marks p {
         margin-right: 10px;
+    }
+    .catalog__banner .filter__form {
+        width: 480px;
+    }
+    .catalog__banner-title, .catalog__subtitle {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 992px) {
+    .catalog__banner {
+        position: relative;
+        min-height: calc(100vh - 79px);
+        background-size: 100% 93%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .catalog__filter .filter__form {
+        width: 100%;
+        display: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+    .catalog__banner.show .filter__form {
+        display: block;
+    }
+    .catalog__subtitle {
+        display: none;
+    }
+    .catalog__banner-text {
+        flex: 1;
     }
 }
 
