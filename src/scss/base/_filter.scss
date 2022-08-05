@@ -92,9 +92,16 @@
     box-shadow: none;
     border-radius: 7px;
     margin-bottom: 20px;
+    appearance: none;
 
     &::placeholder {
         color: #949494;
+    }
+
+    &.filter__form-select {
+      background-image: url('../img/arrow-range.svg');
+      background-repeat: no-repeat;
+      background-position: center right 15px;
     }
 }
 
@@ -296,8 +303,10 @@
     background: transparent;
   }
   
-//arrow-range
 
+.filter__front-toggle {
+  display: none;
+}
 @media (max-width: 1400px) {
     .filter--front .filter__form-item:first-child {
         width: 100%;
@@ -321,17 +330,38 @@
         background-color: $main-color;
         position: relative;
         margin-bottom: 25px;
+    }
+    .filter__front-toggle {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      color: #fff;
+      padding: 9px 10px 10px;
+      transition: none;
 
-        &::after {
-            content: 'Advanced Search';
-            font-family: inherit;
-            font-size: 13px;
-            color: #fff;
-            text-align: center;
-            display: inline-block;
-            width: 100%;
-            padding: 11px 0 13px;
-        }
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        background: url('../img/search.svg') no-repeat center;
+        margin-right: 12px;
+      }
+    }
+    .filter--front.show .filter__front-toggle {
+      font-size: 0;
+      position: absolute;
+      top: 28px;
+      right: 20px;
+      width: 16px;
+      padding: 0;
+      z-index: 11;
+
+      &::before {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
+      }
     }
     .filter--front .filter__form,
     .filter--front .filter__form-item:first-child {

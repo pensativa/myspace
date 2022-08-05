@@ -18,6 +18,7 @@
         text-transform: uppercase;
         flex: 1 1 auto;
         text-align: center;
+        margin-top: 20px;
     }
 
     & .modal-footer {
@@ -101,4 +102,36 @@
 
 .show-password.open {
     background-image: url(../img/eye.svg);
+}
+
+.user-modal--contact {
+    & .modal-content {        
+        background: #fff url('../img/contact-bg.svg') no-repeat top left;
+    }
+
+    & .user-modal__footer {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-modal .modal-title {
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .user-modal__form {
+        width: 100%;
+    }
+    .user-modal__footer .button {
+        width: 170px;
+    }
+    .show-password {
+        margin-top: -35px;
+    }
+    .user-modal .modal-content {
+        width: 97%;
+    }
+    .user-modal--contact .modal-content {
+        background: #fff;
+    }
 }

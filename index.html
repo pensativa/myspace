@@ -105,6 +105,7 @@
 		</section>
 		<section class="filter filter--front">
 			<div class="container">
+                <button type="button" class="no-btn filter__front-toggle">Advanced Search</button>
 				<form class="filter__form">
 					<div class="filter__form-item">
 						<h2 class="filter--front__title">Catalog</h2>
@@ -205,7 +206,36 @@
 					<li>Safe</li>
 					<li>Profitable</li>
 				</ul>
-				<button type="button" class="button property__button">Contact us</button>
+				<button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="button property__button">Contact us</button>
+                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog user-modal user-modal--contact">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="login user-modal__form">
+                                <div class="user-modal__item">
+                                    <label for="yourname" class="label">Your Name</label>
+                                    <input id="yourname" type="text" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="youremail" class="label">Your Email</label>
+                                    <input id="youremail" type="email" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="yourmes" class="label">Your Message</label>
+                                    <textarea name="yourmes" id="yourmes" rows="6" class="input input-textarea"></textarea>
+                                </div>
+                                <div class="user-modal__footer">
+                                    <button type="button" class="button">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
 			</div>
 		</section>
 		<section class="catalog-main">

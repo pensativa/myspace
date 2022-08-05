@@ -1,3 +1,17 @@
+//Change lang 
+const changeLang = function() {
+    const langs = document.querySelectorAll('.header__lang .no-btn');
+    langs.forEach(lang => {
+        lang.onclick = function() {
+            langs.forEach(element => {
+                element.classList.remove('active');
+            });
+            lang.classList.add('active');
+        }
+    });
+}
+changeLang();
+
 //Показать пароль
 const showPassword = function() {
     const showPasswordButton = document.querySelectorAll('.show-password');
@@ -86,12 +100,13 @@ const rangeBg = function() {
 rangeBg();
 
 const showMobileFilter = function() {
-    const toggle = document.querySelector('.filter--front');
+    const toggleArea = document.querySelector('.filter--front');
+    const toggle = document.querySelector('.filter__front-toggle');
     if(!toggle) {
         return;
     }
     toggle.onclick = function() {
-        toggle.classList.toggle('show');
+        toggleArea.classList.toggle('show');
     }
 }
 showMobileFilter();

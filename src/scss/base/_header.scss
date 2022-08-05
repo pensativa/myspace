@@ -79,7 +79,6 @@
         margin-bottom: 20px;
 
         &:hover,
-        &:focus,
         &.active {
             color: $main-color;
             text-decoration: underline;
@@ -89,11 +88,13 @@
         color: #fff;
 
         &:hover,
-        &:focus,
         &.active {
             color: $main-color;
             text-decoration: underline;
         }
+    }
+    & .no-btn.active {
+        order: -1;
     }
 }
 
