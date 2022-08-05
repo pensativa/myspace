@@ -113,3 +113,13 @@ const showMobileFilter = function() {
     }
 }
 showMobileFilter();
+
+//News slider
+
+var swiper = new Swiper(".new__slider", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});

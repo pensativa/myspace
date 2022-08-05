@@ -23,3 +23,15 @@
 .catalog__list .main-pagination {
     margin-right: 43px;
 }
+
+@media (max-width: 1600px) {
+    .catalog__list .main-pagination {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-pagination .page-link {
+        font-size: 12px;
+    }
+}
