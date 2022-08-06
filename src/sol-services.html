@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"MYSPACE",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html', {"w":"w"})
+	<main class="main service">
+        <section class="service__banner service__banner--sol">
+            <div class="container">
+                <h1 class="service__title">Invesrment Solutions Services</h1>
+            </div>
+        </section>
+        <section class="service__body">
+            <div class="container">
+                <div class="service__header">
+                    <h2 class="service__subtitle">Investment Solutions</h2>
+                    <p>Property is an investment. Knowledge is the key to success.</p>
+                </div>
+                <div class="service__text">
+                    <p>We provide tailor-made solutions to assist you in making informed real estate decisions in order to achieve personal and business objectives. Our real estate team can provide you with a wide range of solutions according to your specific personal and business needs or investment criteria and parameters.</p>
+
+                    <p><b>Our services include:</b></p>
+
+                    <ul class="list list-full">
+                        <li>Feasibility / Highest & Best Use Studies: Assisting investors to evaluate investment options and select the most value-adding solution according to their risks/return profile</li>
+                        <li>In-depth financial models including sensitivity analysis and cash flow projections.</li>
+                        <li>Rigorous analysis of options and opportunities.</li>
+                    </ul>
+                </div>
+                <div class="service__form">
+                    <h3 class="service__form-title">Contact Us</h3>
+                    <form  class="service-form">
+                        <div class="service-form__item">
+                            <label for="yourname" class="label">Your Name</label>
+                            <input id="yourname" type="text" class="input" placeholder="email">
+                        </div>
+                        <div class="service-form__item">
+                            <label for="youremail" class="label">Your Email</label>
+                            <input id="youremail" type="email" class="input" placeholder="email">
+                        </div>
+                        <div class="service-form__item">
+                            <label for="yourmes" class="label">Your Message</label>
+                            <textarea name="yourmes" id="yourmes"  rows="6" class="input"></textarea>
+                        </div>
+                        <button class="button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

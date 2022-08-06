@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"MYSPACE",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html', {"w":"w"})
+	<main class="main service">
+        <section class="service__banner service__banner--invest">
+            <div class="container">
+                <h1 class="service__title">Estate Management Services</h1>
+            </div>
+        </section>
+        <section class="service__body">
+            <div class="container">
+                <div class="service__header">
+                    <h2 class="service__subtitle">Estate Management</h2>
+                    <p>The management of personal property, equipment, service workforce and physical capital assets.</p>
+                </div>
+                <div class="service__text">
+                    <p>We work directly with the owners to plan and execute the complete management of a property. Our service standard is to be responsible for the hiring, training and supervision of workers required for delivering the service needs of the household.</p>
+
+                    <p>The manager will maintain detailed records, including income and expenses, bills, repairs, maintenance requests, rent collection and will help with taxes for the property. We can prepare the property before your arrival so it will be ready for moving in. Overall, supervision and management tasks may include:</p>
+
+                    <ul class="list">
+                        <li>Payments and billing</li>
+                        <li>Fast, Quality Tenant Placement</li>
+                        <li>Promotion of your Property</li>
+                        <li>Direct Deposit & Rent Collections</li>
+                        <li>Assistance with taxes</li>
+                        <li>Real estate investment reports & advice</li>
+                        <li>Overseeing repairs and maintenance</li>
+                    </ul>
+                </div>
+                <div class="service__form">
+                    <h3 class="service__form-title">Contact Us</h3>
+                    <form  class="service-form">
+                        <div class="service-form__item">
+                            <label for="yourname" class="label">Your Name</label>
+                            <input id="yourname" type="text" class="input" placeholder="email">
+                        </div>
+                        <div class="service-form__item">
+                            <label for="youremail" class="label">Your Email</label>
+                            <input id="youremail" type="email" class="input" placeholder="email">
+                        </div>
+                        <div class="service-form__item">
+                            <label for="yourmes" class="label">Your Message</label>
+                            <textarea name="yourmes" id="yourmes"  rows="6" class="input"></textarea>
+                        </div>
+                        <button class="button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

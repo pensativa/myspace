@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"MYSPACE",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html', {"w":"w"})
+	<main class="main service">
+        <section class="service__banner service__banner--ur">
+            <div class="container">
+                <h1 class="service__title">Legal Services</h1>
+            </div>
+        </section>
+        <section class="service__body">
+            <div class="container">
+                <div class="service__header">
+                    <h2 class="service__subtitle">Legal</h2>
+                    <p>Any buying procedure should be made with guidance of lawyer.</p>
+                </div>
+                <div class="service__text">
+                    <p><b>The buying or investing procedure</b> is usually guided by lawyer, who will check and insure there are no loans on the property and will make a clear procedure of the deal until issuing the title.</p>
+
+                    <p>Cyprus Land Registry Office undertakes transfer of ownership from seller to buyer. Immovable property can be bought by EU citizens and foreigners in Cyprus without any permissions.</p>
+
+                    <p>Article 23 in the Constitution of Cyprus is the right of ownership of immovable property which empowers non-Cypriots and permanent citizens who own a property on the island to have the same property rights, you can be confident that your property is completely protected by law.</p>
+
+                    <p>Our professionals in legal sphere will always be willing to solve your legal issues when possible.</p>
+                </div>
+                <div class="service__form">
+                    <h3 class="service__form-title">Contact Us</h3>
+                    <form  class="service-form">
+                        <div class="service-form__item">
+                            <label for="yourname" class="label">Your Name</label>
+                            <input id="yourname" type="text" class="input" placeholder="email">
+                        </div>
+                        <div class="service-form__item">
+                            <label for="youremail" class="label">Your Email</label>
+                            <input id="youremail" type="email" class="input" placeholder="email">
+                        </div>
+                        <div class="service-form__item">
+                            <label for="yourmes" class="label">Your Message</label>
+                            <textarea name="yourmes" id="yourmes"  rows="6" class="input"></textarea>
+                        </div>
+                        <button class="button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
