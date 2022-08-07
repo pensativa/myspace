@@ -1,0 +1,318 @@
+.services__banner {
+    @include bg-img('../img/services-bg.webp');
+    margin-bottom: 0;
+}
+
+.services__body {
+    padding-top: 74px;
+    background-position: top center;
+
+    & .service__subtitle {
+        text-align: center;
+    }
+}
+
+.services__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 27px;
+    margin-bottom: 50px;
+
+    & li {
+        width: 48%;
+        padding-right: 2%;
+        margin-bottom: 20px;
+    }
+}
+
+.services__num {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 87px;
+}
+
+.services__num-item {
+    width: 372px;
+    min-height: 291px;
+    margin: 0 25px 25px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #C1C1C1;
+    border-radius: 20px;
+    padding: 38px 10px;
+
+    & .title {
+        font-weight: 700;
+        padding-bottom: 20px;
+        width: 200px;
+        max-width: 100%;
+        border-bottom: $border;
+        margin: 0 auto 10px;
+        text-transform: uppercase;
+
+        &::before {
+            content: '';
+            width: 103px;
+            height: 90px;
+            background-position: center bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            margin: 0 auto 20px;
+        }
+    }
+
+    &:nth-of-type(1) .title::before {
+        background-image: url('../img/house.svg');
+    }
+
+    &:nth-of-type(2) .title::before {
+        background-image: url('../img/refresh.svg');
+    }
+
+    &:nth-of-type(3) .title::before {
+        background-image: url('../img/time.svg');
+    }
+
+    & .number {
+        font-weight: 300;
+        font-size: 45px;
+        color: #707070;
+    }
+}
+
+.services__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.services__item {
+    width: 48%;
+    margin-right: 4%;
+    padding-left: 150px;
+    position: relative;
+    margin-bottom: 60px;
+    z-index: 1;
+
+    &::before {
+        font-family: inherit;
+        font-weight: 900;
+        font-size: 300px;
+        color: rgba(193, 193, 193, 0.18);
+        position: absolute;
+        z-index: 0;
+        left: 5px;
+        line-height: 1;
+    }
+
+    &:nth-of-type(even) {
+        margin-right: 0;
+    }
+
+    &:nth-of-type(1)::before {
+        content: '1';
+        top: -65px;
+    }
+    &:nth-of-type(2)::before {
+        content: '2';
+        bottom: 65px;
+    }
+    &:nth-of-type(3)::before {
+        content: '3';
+        top: -65px;
+    }    
+    &:nth-of-type(4)::before {
+        content: '4';
+        bottom: 65px;
+    }
+}
+
+.services__item-link {
+    display: inline-block;
+    position: relative;
+    width: 505px;
+    max-width: 100%;
+    height: 333px;
+    margin-bottom: 15px;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(272deg, rgba(0, 0, 0, 0) 1.8%, rgba(0, 0, 0, 0.5) 98%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    & p {
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        color: #fff;
+        font-weight: 800;
+        font-size: 40px;
+        z-index: 1;
+        
+        &::after {
+            content: '';
+            width: 170px;
+            height: 3px;
+            background-color: $main-color;
+            display: block;
+            margin-top: 17px;
+            transition: 0.5s cubic-bezier(0.1, -0.6, 0.2, 0);
+        }
+    }
+
+    &:hover p::after {
+        width: 100%;
+    }
+}
+
+.services__item-title {
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.services__item-text {
+    font-weight: 300;
+}
+
+.servicaes__purchasing-head {
+    margin-top: 78px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 80px;
+}
+
+.servicaes__purchasing-title {
+    font-weight: 700;
+    font-size: 57px;
+}
+
+.servicaes__purchasing-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
+
+.servicaes__purchasing-item {
+    width: 25%;
+    text-align: center;
+    margin-right: 12%;
+    margin-bottom: 50px;
+
+    &:nth-of-type(3n) {
+        margin-right: 0;
+    }
+
+    & .icon {
+        display: inline-block;
+        padding-bottom: 26px;
+        margin-bottom: 17px;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #5A5959;
+            opacity: 0.2;
+            display: inline-block;
+        }
+    }
+
+    & .title {
+        text-transform: uppercase;
+    }
+
+    & .text {
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 992px) {
+    .services__item::before {
+        display: none;
+    }
+    .services__item {
+        padding-left: 0;
+    }
+    .servicaes__purchasing-item {
+        width: 30%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services__list li {
+        width: 100%;
+        padding: 0;
+
+        &::before {
+            margin: 0 10px 0 0;
+        }
+    }
+    .services__num-item {
+        width: 300px;
+        margin: 0 0 20px;
+        padding: 38px 0 26px;
+        min-height: 233px;
+    }
+    .services__num-item .title::before {
+        width: 69px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .services__num-item .title {
+        padding-bottom: 19px;
+        width: 155px;
+        margin-bottom: 20px;
+    }
+    .services__num-item .number {
+        font-size: 35px;
+    }
+    .services__item {
+        width: 100%;
+        margin-right: 0;
+    }
+    .services__item-link p,
+    .services__item-title {
+        font-size: 27px;
+    }
+    .servicaes__purchasing-title {
+        font-size:  30px;
+    }
+    .servicaes__purchasing-item {
+        width: 48%;
+        margin-right: 4%;
+
+        &:nth-of-type(3n)
+        {
+            margin-right: 4%;
+        }
+
+        &:nth-of-type(even) {
+            margin-right: 0;
+        }
+
+        & .icon {
+            width: 49px;
+            padding-bottom: 0;
+            margin-bottom: 28px;
+        }
+    }
+}

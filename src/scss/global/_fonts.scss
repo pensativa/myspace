@@ -1,8 +1,11 @@
-@include font-face("Lato", "Lato-Black", 800);
-@include font-face("Lato", "Lato-BlackItalic", 800, 'italic');
+@include font-face("Lato", "Lato-Black", 900);
+@include font-face("Lato", "Lato-BlackItalic", 900, 'italic');
 @include font-face("Lato", "Lato-Bold", 700);
 @include font-face("Lato", "Lato-BoldItalic", 700, 'italic');
 @include font-face("Lato", "Lato-Italic", 400, 'italic');
 @include font-face("Lato", "Lato-Light", 300);
 @include font-face("Lato", "Lato-LightItalic", 300, 'italic');
 @include font-face("Lato", "Lato-Regular", 400);
+@include font-face("Lato", "Lato-Medium", 500);
+@include font-face("Lato", "Lato-SemiBold", 600);
+@include font-face("Lato", "Lato-ExtraBold", 800);

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"MYSPACE",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html', {"w":"w"})
+	<main class="main services">
+        <section class="service__banner services__banner">
+            <div class="container">
+                <h1 class="service__title">Real Estate Services</h1>
+            </div>
+        </section>
+        <section class="service__body services__body">
+            <div class="container">
+                <h1 class="service__subtitle">Concierge Services</h1>
+                <ul class="list services__list">
+                    <li>MYSPACE Real Estate services include concierge, estate management, mortgage brokering, and legal services.  Just like many other international agencies, Majesty real estate offers to provide a periphery of real estate services and free up its clients time.</li>
+                    <li>We respect people’s time and money. To save both just give us a ring and we will arrange your free consultation. Thereon, we will suggest a list of real estate services optimal to your budget and properties to your unique specifications.</li>
+                </ul>
+                <div class="services__num">
+                    <div class="services__num-item">
+                        <p class="title">PROPERTY SOLD</p>
+                        <p class="number">100</p>
+                    </div>
+                    <div class="services__num-item">
+                        <p class="title">PROPERTY RENTED</p>
+                        <p class="number">72</p>
+                    </div>
+                    <div class="services__num-item">
+                        <p class="title">RESPONSE TIME</p>
+                        <p class="number">5</p>
+                    </div>
+                </div>
+                <div class="services__items">
+                    <div class="services__item">
+                        <a href="sol-services.html" class="services__item-link">
+                            <img src="img/cat-1.jpg" alt="Investment Solutions">
+                            <p>Investment Solutions</p>
+                        </a>
+                        <h3 class="services__item-title">Investment Solutions</h3>
+                        <p class="services__item-text">You will be able to run a business in Cyprus and receive dividends as a shareholder of such a Company without any legal limitations incurred by the government of Cyprus.</p>
+                    </div>
+                    <div class="services__item">
+                        <a href="con-services.html" class="services__item-link">
+                            <img src="img/cat-2.jpg" alt="Concierge Services">
+                            <p>Concierge Services</p>
+                        </a>
+                        <h3 class="services__item-title">Concierge Services</h3>
+                        <p class="services__item-text">MYSPACE real estate services include concierge service. Let our agency take care of all travel arrangements, cruises and excursions, car rentals, dining and reservations, yacht rentals, security, personal services, corporate services, planning, scheduling, and absolutely any desirable assistance in whatever it may be.  Contact us to find out more on services.</p>
+                    </div>
+                    <div class="services__item">
+                        <a href="invest-services.html" class="services__item-link">
+                            <img src="img/cat-3.jpg" alt="Estate Management">
+                            <p>Estate Management</p>
+                        </a>
+                        <h3 class="services__item-title">Estate Management</h3>
+                        <p class="services__item-text">Estate management is a crucial service. This includes property, equipment, workforce and capital management. We work directly with the owners to plan and execute the complete management of property. Our service is the responsibility of the hiring, training and supervision of workers required for the delivery of service.  Majesty supervises all of its clients.</p>
+                    </div>
+                    <div class="services__item">
+                        <a href="ur-services.html" class="services__item-link">
+                            <img src="img/cat-4.jpg" alt="Legal Services">
+                            <p>Legal Services</p>
+                        </a>
+                        <h3 class="services__item-title">Legal Services</h3>
+                        <p class="services__item-text">Legal Services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="property services__property">
+			<div class="container">
+				<h2 class="property__title">Do you want to sell your property?</h2>
+				<ul class="property__list">
+					<li>Fast</li>
+					<li>Safe</li>
+					<li>Profitable</li>
+				</ul>
+				<button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="button property__button">Contact us</button>
+                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog user-modal user-modal--contact">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="login user-modal__form">
+                                <div class="user-modal__item">
+                                    <label for="yourname" class="label">Your Name</label>
+                                    <input id="yourname" type="text" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="youremail" class="label">Your Email</label>
+                                    <input id="youremail" type="email" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="yourmes" class="label">Your Message</label>
+                                    <textarea name="yourmes" id="yourmes" rows="6" class="input input-textarea"></textarea>
+                                </div>
+                                <div class="user-modal__footer">
+                                    <button type="button" class="button">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+        <section class="servicaes__purchasing">
+            <div class="container">
+                <div class="servicaes__purchasing-head">
+                    <h2 class="servicaes__purchasing-title">Purchasing Procedure</h2>
+                    <p>Purchasing Procedure</p>
+                </div>
+                <div class="servicaes__purchasing-list">
+                    <div class="servicaes__purchasing-item">
+                        <img src="img/cust.svg" alt="" class="icon">
+                        <p class="title">GET IN TOUCH</p>
+                        <p class="text">The agency aims to reply to all phone calls, emails, and faxes, to all incoming queries, diligently.  Leave a query in our contacts.</p>
+                    </div>
+                    <div class="servicaes__purchasing-item">
+                        <img src="img/booking.svg" alt="" class="icon">
+                        <p class="title">BOOKING</p>
+                        <p class="text">If our client is a foreigner then the team begins by planning and booking all travel essentials including a list of properties.</p>
+                    </div>
+                    <div class="servicaes__purchasing-item">
+                        <img src="img/meeting.svg" alt="" class="icon">
+                        <p class="title">MEETING</p>
+                        <p class="text">When the client arrives to Cyprus we ensure there is transport waiting at the airport and that the client settles in accommodation</p>
+                    </div>
+                    <div class="servicaes__purchasing-item">
+                        <img src="img/consultation.svg" alt="" class="icon">
+                        <p class="title">CONSULTATION</p>
+                        <p class="text">This is when we show our client what properties we have selected for viewing based on what they have previously specified to us.</p>
+                    </div>
+                    <div class="servicaes__purchasing-item">
+                        <img src="img/veiwing.svg" alt="" class="icon">
+                        <p class="title">VIEWING</p>
+                        <p class="text">During the viewing stage clients are shown all the options that have been laid out by the agency.  An extensive list of property.</p>
+                    </div>
+                    <div class="servicaes__purchasing-item">
+                        <img src="img/transaction.svg" alt="" class="icon">
+                        <p class="title">TRANSACTION</p>
+                        <p class="text">Once our clients confirm that they are happy with the chosen property, we initiate the paperwork.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
