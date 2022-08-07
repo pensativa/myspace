@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"MYSPACE",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html', {"w":"w"})
+	<main class="main purchasing">
+        <section class="service__banner purchasing__banner">
+            <div class="container">
+                <h1 class="service__title">Procedure for Purchasing</h1>
+            </div>
+        </section>
+        <section class="service__body">
+            <div class="container">
+                <div class="service__header">
+                    <h2 class="service__subtitle">Procedure for Purchasing</h2>
+                    <p>Real Estate in Cyprus</p>
+                </div>
+                <div class="service__text purchasing__text">
+                    <p><b>Buying property in Cyprus</b> is a fairly simple and reliable procedure. The procedure can be complete within reasonable timeframes after signing the purchase agreement. Furthermore, for citizens of the European Union it is faster and without restriction.</p>
+
+                    <p>Citizens from countries that are not part of the European Union need permission from the Cyprus Council of Ministers. Such permits can be obtained personally or with the support of our company. Upon receiving this permission, it is possible to acquire property or a plot of land with a maximum area of up to 4041 sq.m.</p>
+                        
+                    <p>In Cyprus, there are two statuses for acquired property: freehold and lease-hold. In the case of a freehold purchase, you become a lifetime owner with the right to transfer real-estate by inheritance. In the case of a lease-hold purchase, you become the owner of real estate, but not the land on which this property is located; in other words, you lease the land for the period indicated in the contract.</p>
+                    <h3 class="purchasing__subtitle">Process of Transaction:</h3>
+                    <ul class="purchasing__list list">
+                        <li>Selecting the property.</li>
+                        <li>Depositing 1-2% of the purchased real-estate, in the case of apartments (approximately €2,000-5,000), in the case of private houses (approximately €7,000-10,000).</li>
+                        <li>Drafting a purchase agreement (typically 1-5 days).</li>
+                        <li>Signing the contract. (Accompanied by the second tranche payment of 30%).</li>
+                        <li>Payment of stamp duty to the Tax authorities and the submission of a written application to the Council of Ministers in Cyprus for the approval of purchase. The application is submitted along with a copy of the passport after the signing of the purchase agreement.</li>
+                        <li>Submitting the documents to the land registry no later than two months from the date of signing. This procedure is carried out in the interests of the buyer and guarantee protection from the resale of property. Registration confirms the ownership of property before an individual certificate of ownership is issued. The procedure is carried out by the developer.</li>
+                        <li>Once (100% of) all payments have been made, the buyer receives the final version of the certificate of ownership from the Cabinet of Ministers, pointing out that all payments are made via bank transfers.</li>
+                        <li>The buyer receipt of title and ownership happen after all necessary documents are provided: receipt of payment for the registration fee and property tax, a copy of the permission from the Council of Ministers and a certificate of accounts from the Central Bank – this paperwork ensures that the buyer has paid all registration fees and taxes.</li>
+                        <li>To receive the title both parties have to be present. Thereafter the deal is registered at the land registry and taxes about a week. The date of acceptance and transfer of real-estate is indicated in the purchase agreement. Once all these steps have been complete, you become the proud owner of real estate in Cyprus.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="property purchasing__property">
+			<div class="container">
+				<h2 class="property__title">Do you want to sell your property?</h2>
+				<ul class="property__list">
+					<li>Fast</li>
+					<li>Safe</li>
+					<li>Profitable</li>
+				</ul>
+				<button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="button property__button">Contact us</button>
+                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog user-modal user-modal--contact">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="login user-modal__form">
+                                <div class="user-modal__item">
+                                    <label for="yourname" class="label">Your Name</label>
+                                    <input id="yourname" type="text" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="youremail" class="label">Your Email</label>
+                                    <input id="youremail" type="email" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="yourmes" class="label">Your Message</label>
+                                    <textarea name="yourmes" id="yourmes" rows="6" class="input input-textarea"></textarea>
+                                </div>
+                                <div class="user-modal__footer">
+                                    <button type="button" class="button">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

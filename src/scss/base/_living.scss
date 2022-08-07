@@ -1,0 +1,123 @@
+.living__banner {
+    @include bg-img('../img/living-bg.jpg');
+}
+
+.living__text {
+    margin-bottom: 40px;
+
+    & p {
+        margin-bottom: 20px;
+
+        &:first-of-type {
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                border-radius: 50%;
+                background-color: $main-color;
+                position: absolute;
+                top: 8px;
+                left: -20px;
+            }
+        }
+    }
+
+    & .acc {
+        color: $main-color
+    }
+}
+
+.living__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.living__item {
+    width: 12%;
+    margin-right: 5.5%;
+    margin-bottom: 60px;
+    text-align: center;
+
+    &:nth-of-type(6n) {
+        margin-right: 0;
+    }
+
+    & .num {
+        font-weight: 500;
+        font-size: 40px;
+        margin-top: 16px;
+    }
+
+    & .value {
+        font-weight: 300;
+    }
+}
+
+.living__news {
+    margin-top: 90px;
+}
+
+.living__body {
+    margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .living__item {
+        width: 14%;
+        margin-right: 3%;
+    }
+    .living__item .num {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .living__item {
+        width: 21%;
+        margin-right: 5%;
+
+        &:nth-of-type(6n) {
+            margin-right: 5%;
+        }
+
+        &:nth-of-type(4n) {
+            margin-right: 0;
+        }
+    }
+    .living__item .num {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .living__text p:first-of-type {
+        text-indent: 20px;
+
+        &::before {
+            width: 8px;
+            height: 8px;
+            top: 6px;
+            left: 0;
+        }
+    }
+    .living__item {
+        width: 28%;
+        margin-right: 8%;
+
+        &:nth-of-type(4n) {
+            margin-right: 8%;
+        }
+
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
+    }
+    .living__item .num {
+        font-size: 22px;
+    }
+}

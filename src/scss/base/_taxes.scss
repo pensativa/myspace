@@ -1,0 +1,78 @@
+.taxes__banner {
+    @include bg-img('../img/taxes-bg.webp');
+}
+
+.taxes__body {
+    margin: 50px 0 100px;
+}
+
+.taxes__title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 57px;
+    margin-bottom: 50px;
+}
+
+.taxes__text p {
+    margin-bottom: 20px;
+    font-weight: 300;
+
+    &.prim {
+        font-style: italic;
+    }
+}
+
+.taxes__subtitle {
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 20px;
+
+    &::before {
+        top: 20px;
+    }
+}
+
+.taxes__table {
+    border: 1px solid #C1C1C1;
+    border-radius: 7px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 300;
+
+    & th,
+    & td {
+        padding: 18px 32px;
+    }
+
+    & th {
+        border-bottom: $border;
+    }
+
+    & td:nth-of-type(even) {
+        color: $main-color;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 768px) {
+    .taxes__title {
+        font-size: 37px;
+        margin-bottom: 17px;
+    }
+    .taxes__subtitle {
+        font-size: 27px;
+
+        &::before {
+            top: 12px;
+        }
+    }
+    .taxes__body {
+        margin: 0 0 50px;
+    }
+    .taxes__table td, .taxes__table th {
+        padding: 14px 20px;
+    }
+    .taxes__text p {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"MYSPACE",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html', {"w":"w"})
+	<main class="main living">
+        <section class="service__banner living__banner">
+            <div class="container">
+                <h1 class="service__title">Living in Cyprus</h1>
+            </div>
+        </section>
+        <section class="living__body">
+            <div class="container">
+                <h2 class="taxes__title">Living in Cyprus</h2>
+                <div class="living__text">
+                    <p><b class="acc">Living in Cyprus</b> means sharing the south, and accessible north sides, of the island with more than 1.2 million people, most of whom speak English.  Cyprus is a relatively small island with an area of 9,250 km, within this territory you can find many parks, beaches golf courses, museums, monuments, clubs, bars, restaurants, spas, whatever you want. Who wouldn’t love more than 300 days of sun a year in a  welcoming environment.</p>
+                    <p>Cyprus property is the adventure of meeting new people every season as tourism pours into the country.  It is the freedom of travelling anywhere in the world, flexibility of travel. Moreover, buying Cyprus property, above all, is a wise strategic geographical investment into the future.  Real estate in Cyprus is on a steady rise, additionally to that by 2020 the island will begin gas exports to Europe and by then real estate will be more expensive.</p>
+                </div>
+                <div class="living__items">
+                    <div class="living__item">
+                        <img src="img/l-1.svg" alt="">
+                        <p class="num">9,250</p>
+                        <p class="value">Area (km2)</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-2.svg" alt="">
+                        <p class="num">1.2 mln</p>
+                        <p class="value">Population</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-3.svg" alt="">
+                        <p class="num">333</p>
+                        <p class="value">Days of Sun</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-4.svg" alt="">
+                        <p class="num">120+</p>
+                        <p class="value">Parks</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-5.svg" alt="">
+                        <p class="num">5</p>
+                        <p class="value">Golf</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-6.svg" alt="">
+                        <p class="num">98</p>
+                        <p class="value">Museums</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-7.svg" alt="">
+                        <p class="num">91%</p>
+                        <p class="value">Eng-speakers</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-8.svg" alt="">
+                        <p class="num">16%</p>
+                        <p class="value">Tourism Growth</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-9.svg" alt="">
+                        <p class="num">3.334 mln</p>
+                        <p class="value">Tourism 2016</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-10.svg" alt="">
+                        <p class="num">56+</p>
+                        <p class="value">Beaches</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-11.svg" alt="">
+                        <p class="num">23-25C°</p>
+                        <p class="value">Water (May-Oct)</p>
+                    </div>
+                    <div class="living__item">
+                        <img src="img/l-12.svg" alt="">
+                        <p class="num">31C°</p>
+                        <p class="value">Air (May-Oct)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="property purchasing__property">
+			<div class="container">
+				<h2 class="property__title">Do you want to sell your property?</h2>
+				<ul class="property__list">
+					<li>Fast</li>
+					<li>Safe</li>
+					<li>Profitable</li>
+				</ul>
+				<button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="button property__button">Contact us</button>
+                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog user-modal user-modal--contact">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="login user-modal__form">
+                                <div class="user-modal__item">
+                                    <label for="yourname" class="label">Your Name</label>
+                                    <input id="yourname" type="text" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="youremail" class="label">Your Email</label>
+                                    <input id="youremail" type="email" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="yourmes" class="label">Your Message</label>
+                                    <textarea name="yourmes" id="yourmes" rows="6" class="input input-textarea"></textarea>
+                                </div>
+                                <div class="user-modal__footer">
+                                    <button type="button" class="button">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+        <section class="living__body">
+            <div class="container">
+                <h2 class="taxes__title">Living in Cyprus</h2>
+                <div class="living__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare duis convallis imperdiet risus sed sed risus at viverra. Eget quis arcu sollicitudin fusce. Quis ipsum at nulla netus quis turpis aliquam ipsum semper. At dui fringilla odio sem adipiscing enim. Lorem risus suscipit mattis non feugiat purus consequat vehicula volutpat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit nulla vitae elementum at amet est porttitor cras. Nulla dis in commodo velit. Fermentum turpis pretium, scelerisque nulla. Consectetur feugiat erat in natoque risus integer laoreet maecenas. Gravida magna id arcu elit velit.</p>
+                </div>
+                <div class="news__list living__news">
+                    <div class="news__item">
+                        <img src="img/news.webp" alt="Troodos Mountains" class="news__img">
+                        <div class="news__body">
+                            <h3 class="news__item-title">Troodos Mountains Will Help Scientists Explo...</h3>
+                            <p class="news__date">Nov 09, 2022</p>
+                            <div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et aliquam id turpis facilisis id eleifend blandit convallis lobortis...</div>
+                            <div class="news__footer">
+                                <a href="new.html" class="news__more">Continue Reading...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="img/news.webp" alt="Troodos Mountains" class="news__img">
+                        <div class="news__body">
+                            <h3 class="news__item-title">Troodos Mountains Will Help Scientists Explo...</h3>
+                            <p class="news__date">Nov 09, 2022</p>
+                            <div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et aliquam id turpis facilisis id eleifend blandit convallis lobortis...</div>
+                            <div class="news__footer">
+                                <a href="new.html" class="news__more">Continue Reading...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="img/news.webp" alt="Troodos Mountains" class="news__img">
+                        <div class="news__body">
+                            <h3 class="news__item-title">Troodos Mountains Will Help Scientists Explo...</h3>
+                            <p class="news__date">Nov 09, 2022</p>
+                            <div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et aliquam id turpis facilisis id eleifend blandit convallis lobortis...</div>
+                            <div class="news__footer">
+                                <a href="new.html" class="news__more">Continue Reading...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__load-more">
+                    <button class="button--outline">Load more listing</button>
+                </div>
+            </div>
+        </section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

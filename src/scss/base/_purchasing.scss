@@ -1,0 +1,55 @@
+.purchasing__banner {
+    @include bg-img('../img/purchasing-bg.webp');
+}
+
+.purchasing__subtitle {
+    margin-top: 35px;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.purchasing__text {
+    margin-bottom: 100px;
+}
+
+.purchasing__text .purchasing__list.list {
+    display: block;
+    max-height: 100%;
+
+    & li {
+        width: 100%;
+        padding-left: 24px;
+        position: relative;
+        margin-bottom: 20px;
+
+        &::before {
+            position: absolute;
+            top: 7px;
+            left: 0;
+            margin: 0;
+        }
+    }
+}
+
+.purchasing__property {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .purchasing__subtitle {
+        margin-top: 0;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .purchasing__text {
+        margin-bottom: 60px;
+    }
+    .purchasing__text .purchasing__list.list li {
+        margin-bottom: 10px;
+    }
+    .purchasing__text .purchasing__list.list {
+        margin-left: 0;
+    }
+}

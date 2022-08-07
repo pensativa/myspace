@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"MYSPACE",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html', {"w":"w"})
+	<main class="main taxes">
+        <section class="service__banner taxes__banner">
+            <div class="container">
+                <h1 class="service__title">Taxes in Cyprus</h1>
+            </div>
+        </section>
+        <section class="taxes__body">
+            <div class="container">
+                <h2 class="taxes__title">Taxes in Cyprus</h2>
+                <div class="taxes__text">
+                    <h3 class="cabinet__subtitle taxes__subtitle">Transfer Fees</h3>
+                    <table class="taxes__table">
+                        <tr>
+                            <th>Property Price</th>
+                            <th>Rate</th>
+                        </tr>
+                        <tr>
+                            <td>First €85.000</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td>€85.001 to €170.000</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>Over €170.000</td>
+                            <td>8%</td>
+                        </tr>
+                    </table>
+                    <p class="prim">A transfer of the property which is subject to VAT is exempt from the above transfer fees.</p>
+                    <p class="prim">A transfer of the property which is not subject to VAT will be eligible for a 50% exemption from the above transfer fees.</p>
+                    <p><b>CAPITAL GAINS TAX</b></p>
+
+                    <p>When selling property, the seller must pay 20% tax on profit (the difference between the purchase price and the sale price).  In some cases, a decrease in tax calculation may be possible, if the seller takes into account – loan servicing, the cost for renovation etc.  Subject to certain conditions, properties acquired between July 16, 2015 and December 31, 2016 inclusive, are exempt from capital gains tax on future sales.</p>
+
+                    <p><b>ADDED VALUE TAX</b></p>
+
+                    <p>When buying new real estate from a developer, the buyer must pay 19% VAT.  The same rate is applicable to undeveloped land, on which construction is planned.</p>
+
+                    <p>In transactions involving the purchase of new property from first –time buyers the buyers have the right to apply for a reduced rate of VAT of 5% rather than 19%. The preferential rate of VAT applies to the first 200 sq. m of an object (area) the remaining area is subject to VAT at a rate of 19%. Property must be used for the purpose of permanent residence in Cyprus for a minimum of 10 years.</p>
+
+                    <p><b>STAMP DUTY</b></p>
+
+                    <p>It is calculated on the basis of the contract selling price.</p>
+                    <table class="taxes__table">
+                        <tr>
+                            <th>Value</th>
+                            <th>Rate</th>
+                        </tr>
+                        <tr>
+                            <td>The first €5.000</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>€5.001 – €170.000</td>
+                            <td>0.15%</td>
+                        </tr>
+                        <tr>
+                            <td>More than €170.000</td>
+                            <td>0.2%</td>
+                        </tr>
+                    </table>
+                    <p><b>OTHER</b></p>
+                    <p>Once a year, property owners must pay the so-called municipal fee (garbage collection, repair and maintenance of streets, etc.).  Each municipality calculates their fees separately based on the value of the facility in 2013.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="property purchasing__property">
+			<div class="container">
+				<h2 class="property__title">Do you want to sell your property?</h2>
+				<ul class="property__list">
+					<li>Fast</li>
+					<li>Safe</li>
+					<li>Profitable</li>
+				</ul>
+				<button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="button property__button">Contact us</button>
+                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog user-modal user-modal--contact">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="login user-modal__form">
+                                <div class="user-modal__item">
+                                    <label for="yourname" class="label">Your Name</label>
+                                    <input id="yourname" type="text" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="youremail" class="label">Your Email</label>
+                                    <input id="youremail" type="email" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="yourmes" class="label">Your Message</label>
+                                    <textarea name="yourmes" id="yourmes" rows="6" class="input input-textarea"></textarea>
+                                </div>
+                                <div class="user-modal__footer">
+                                    <button type="button" class="button">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
