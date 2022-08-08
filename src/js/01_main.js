@@ -59,6 +59,7 @@ editData();
 
 //Catalog view slider
 var swiper = new Swiper(".catalog__slider", {
+    loop: true,
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
@@ -121,5 +122,26 @@ var swiper = new Swiper(".new__slider", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+});
+
+//Imigration slider
+
+var swiper = new Swiper(".imigration__catalog", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
     },
 });
