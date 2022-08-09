@@ -115,9 +115,33 @@ const showMobileFilter = function() {
 }
 showMobileFilter();
 
+//Product slider
+var swiperThumbs = new Swiper(".product__thumbs", {
+    spaceBetween: 5,
+    slidesPerView: 3,
+    direction: "horizontal",
+    watchSlidesProgress: true,
+    breakpoints: {
+        992: {
+            direction: "vertical",
+            spaceBetween: 20,
+        },
+    },
+  });
+  var swiperProduct = new Swiper(".product__slider", {
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiperThumbs,
+    },
+  });
+
 //News slider
 
-var swiper = new Swiper(".new__slider", {
+var swiperNews = new Swiper(".new__slider", {
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -127,7 +151,7 @@ var swiper = new Swiper(".new__slider", {
 
 //Imigration slider
 
-var swiper = new Swiper(".imigration__catalog", {
+var swiperIm = new Swiper(".imigration__catalog", {
     slidesPerView: 1,
     spaceBetween: 0,
     navigation: {
