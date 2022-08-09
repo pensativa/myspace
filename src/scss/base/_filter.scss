@@ -309,8 +309,12 @@
   list-style: none;
   padding-left: 0;
 
-  & li:not(:first-of-type) {
+  & li:not(:first-of-type),
+  & .close {
     display: none;
+  }
+  & li[style]:not(.close) {
+    display: block;
   }
 }
   

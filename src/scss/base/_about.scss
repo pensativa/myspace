@@ -1,0 +1,114 @@
+.about__bunner {
+    @include bg-img('../img/about-bg.jpg');
+    margin-bottom: 80px;
+}
+.about__body {
+    overflow: hidden;
+}
+.about__body > .container {
+    padding-bottom: 90px;
+    background: url('../img/icon.svg') no-repeat bottom right;
+}
+
+.about__subtitle {
+    font-weight: 700;
+    font-size: 57px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+    margin: 65px 0 125px;
+}
+
+.about__item {
+    font-weight: 300;
+    margin-bottom: 30px;
+    width: 25%;
+    position: relative;
+    & p {
+        margin-top: 34px;
+    }
+    & b {
+        font-weight: 500;
+        color: $main-color;
+    }
+    &:nth-of-type(odd)::after {
+        content: '';
+        width: 843px;
+        height: 449px;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url('../img/ai.svg') no-repeat top center/contain;
+    }
+}
+
+.list.about__list {
+    margin-bottom: 40px;
+
+    & li {
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 24px;
+
+        &::before {
+            position: absolute;
+            top: 7px;
+            left: 0;
+            margin: 0;
+        }
+
+        & b {
+            color: $main-color;
+        }
+    }
+}
+
+.about__property.property {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .about__item {
+        width: 30%;
+    }
+    .about__item:nth-of-type(odd)::after {
+        width: 694px;
+        height: 425px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about__item {
+        width: 33%;
+    }
+    .about__item:nth-of-type(odd)::after {
+        width: 556px;
+        height: 387px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__subtitle {
+        font-size: 37px;
+    }
+    .about__item {
+        width: 100%;
+
+        & img {
+            width: 60px;
+        }
+    }
+    .about__item:nth-of-type(odd)::after {
+        width: 556px;
+        height: 387px;
+    }
+}

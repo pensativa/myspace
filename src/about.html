@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"MYSPACE",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main about">
+        <section class="service__banner about__bunner">
+            <div class="container">
+                <h1 class="service__title">Your dream home in Cyprus<br>
+                    can become a reality</h1>
+            </div>
+        </section>
+        <section class="about__body">
+            <div class="container">
+                <h2 class="about__subtitle">Real Estate agency in Cyprus</h2>
+                <div class="about__box">
+                    <div class="about__item">
+                        <img src="img/a-1.svg" alt="">
+                        <p><b>MYSPACE</b> help our clients find their dream home, landlords find tenants and sellers sell their properties.</p>
+                    </div>
+                    <div class="about__item">
+                        <img src="img/a-2.svg" alt="">
+                        <p><b>MYSPACE</b> is a real estate agency serving homeowners and landlords who want to sell or rent their property.</p>
+                    </div>
+                    <div class="about__item">
+                        <img src="img/a-3.svg" alt="">
+                        <p><b>MYSPACE</b> - We help you acquire your space and increase your capital.</p>
+                    </div>
+                </div>
+                <h2 class="about__subtitle">About our Agency</h2>
+                <ul class="list about__list">
+                    <li>You will receive high standards of service through the uncompromising service of a team of professionals and an individual approach. We will make sure that all your individual needs are taken into account at every stage of the buying or renting process.</li>
+                    <li>Behind every successful business, you will find a dedicated and passionate team. It is our people who make us who we are, a small but well-formed team of real estate experts. The Myspace management team has over 10 years of experience in the real estate industry, which helps the company provide the highest level of service.</li>
+                    <li><b>MYSPACE</b> is an expert in short and long term investments in Cyprus.</li>
+                    <li>If you need professional real estate advice, please contact us. We will answer any questions!</li>
+                </ul>
+            </div>
+        </section>
+        <section class="property about__property">
+			<div class="container">
+				<h2 class="property__title">Do you want to sell your property?</h2>
+				<ul class="property__list">
+					<li>Fast</li>
+					<li>Safe</li>
+					<li>Profitable</li>
+				</ul>
+				<button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="button property__button">Contact us</button>
+                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                    <div class="modal-dialog user-modal user-modal--contact">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="login user-modal__form">
+                                <div class="user-modal__item">
+                                    <label for="yourname" class="label">Your Name</label>
+                                    <input id="yourname" type="text" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="youremail" class="label">Your Email</label>
+                                    <input id="youremail" type="email" class="input">
+                                </div>
+                                <div class="user-modal__item">
+                                    <label for="yourmes" class="label">Your Message</label>
+                                    <textarea name="yourmes" id="yourmes" rows="6" class="input input-textarea"></textarea>
+                                </div>
+                                <div class="user-modal__footer">
+                                    <button type="button" class="button">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -16,7 +16,6 @@
     font-weight: 300;
 
     &:hover,
-    &:active,
     &.show {
         color: $main-color;
 
@@ -68,9 +67,9 @@
 }
 
 .header__lang {
-    position: absolute;
-    bottom: -120px;
-    left: 0;
+    position: fixed;
+    top: 75vh;
+    left: 5%;
     display: flex;
     flex-direction: column;
 
@@ -114,9 +113,19 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 991px) {
+    .header .close {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
     .header .navbar-brand {
         width: 150px;
+        display: inline-block;
+    }
+    .header .dropdown-menu {
+        box-shadow: none;
     }
     .header .navbar-nav {
         width: 100%;
@@ -155,6 +164,24 @@
                 transform: rotate(-45deg) translate(12px, -10px);
             }
         }
+    }
+    .header .navbar-collapse {
+        position: fixed;
+        z-index: 100;
+        background: #fff;
+        top: 0;
+        left: 0;
+        width: 80vw;
+        height: 100vh;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        padding: 16px;
+        box-shadow: 10px 4px 30px rgba(55, 55, 55, 0.33), 10px 4px 30px rgba(55, 55, 55, 0.58);
+    }
+    .header .navbar-collapse::-webkit-scrollbar {
+        width: 0;
+        height: 0;
     }
     .header .nav-link {
         border-bottom: 1px solid rgba(112, 112, 112, 0.07);

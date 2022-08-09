@@ -91,11 +91,17 @@ const rangeBg = function() {
     if(!range) {
         return;
     }
+    const listText = document.querySelectorAll('.filter__range-val li');
     let rangeMaxValue = document.querySelector('.filter__range').max;
-    const fillRange = document.querySelector('.filter__range-fill')
+    const fillRange = document.querySelector('.filter__range-fill');
     range.oninput = function() {
         let val = (range.value / rangeMaxValue) * 100;
         fillRange.style.background = 'linear-gradient(to right, #D57800 0%, #D57800 ' + val + '%, #707070 ' + val + '%,  #707070 100%)';
+        listText.forEach(li => {
+            li.classList.add('close');
+        });
+        listText[range.value].classList.remove('close');
+        listText[range.value].style.marginLeft = val / 2 + '%'
     }
 };
 rangeBg();
