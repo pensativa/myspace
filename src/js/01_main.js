@@ -58,8 +58,10 @@ const editData = function() {
 editData();
 
 //Catalog view slider
+
 var swiper = new Swiper(".catalog__slider", {
     loop: true,
+    nested: true,
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
@@ -137,8 +139,8 @@ var swiperThumbs = new Swiper(".product__thumbs", {
   var swiperProduct = new Swiper(".product__slider", {
     spaceBetween: 0,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-nexts",
+      prevEl: ".swiper-button-previos",
     },
     thumbs: {
       swiper: swiperThumbs,
@@ -160,9 +162,10 @@ var swiperNews = new Swiper(".new__slider", {
 var swiperIm = new Swiper(".imigration__catalog", {
     slidesPerView: 1,
     spaceBetween: 0,
+    nested: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-n",
+      prevEl: ".swiper-button-p",
     },
     breakpoints: {
       992: {

@@ -71,8 +71,8 @@
     height: 100%;
     margin-bottom: 60px;
     
-    & .swiper-button-next,
-    & .swiper-button-prev {
+    & .swiper-button-nexts,
+    & .swiper-button-previos {
         position: absolute;
         top: 50%;
         left: 0;
@@ -82,7 +82,7 @@
         background: url('../img/arrow-left.svg') no-repeatcenter/contain;
         transform: translateY(-50%);
     }
-    & .swiper-button-next {
+    & .swiper-button-nexts {
         transform: translateY(-50%) rotate(180deg);
         left: auto;
         right: 33px;

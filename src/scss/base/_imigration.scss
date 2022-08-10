@@ -169,8 +169,30 @@
     }
 }
 
+.imigration__protety .imigration__subtitle {
+    margin-bottom: 0;
+}
+
 .imigration__catalog {
     margin-bottom: 80px;
+    position: relative;
+    padding-top: 65px;
+
+    & .swiper-button-n,
+    & .swiper-button-p {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 98px;
+        height: 50px;
+        border-radius: 0 22px 22px 0;
+        background: rgba(245, 245, 245, 0.48) url('../img/ep_arrow-left.svg') no-repeat center/contain;
+    }
+    & .swiper-button-n {
+        transform: rotate(180deg);
+        right: 105px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -259,6 +281,16 @@
     }
     .imigration__benefits {
         margin-bottom: 60px;
+    }
+    .imigration__catalog .swiper-button-n, .imigration__catalog .swiper-button-p {
+        width: 80px;
+        height: 35px;
+    }
+    .imigration__catalog {
+        margin-bottom: 40px;
+        position: relative;
+        padding-top: 46px;
+        margin-top: 10px;
     }
 }
 
