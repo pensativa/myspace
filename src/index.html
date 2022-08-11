@@ -8,7 +8,7 @@
 })
 
 <body>
-	@@include('components/page-blocks/_header.html', {'w':'w',})
+	@@include('components/page-blocks/_header.html')
 	<main class="main">
 		<section class="banner">
 			<div class="container">
@@ -78,7 +78,14 @@
                             <div class="filter__range-fill"></div>
                             <input id="distance" type="range" class="filter__range" min="0" max="5" step="1" value="0">
                         </div>
-						<p class="filter__range-val">First Line</p>
+						<ul class="filter__range-val">
+                            <li>First Line</li>
+                            <li>Second Line</li>
+                            <li>Third Line</li>
+                            <li>Forth Line</li>
+                            <li>Fifth Line</li>
+                            <li>Sixth Line</li>
+                        </ul>
 						<button class="button filter__button">Search</button>
 					</div>
 				</form>
@@ -89,22 +96,22 @@
 				<h2 class="main-catigory__title">Most popular categories</h2>
 				<div class="main-category__items">
 					<div class="main-category__item">
-						<a href="">
+						<a href="catalog.html">
 							<h3 class="main-category__item-title">Towers</h3>
 						</a>
 					</div>
 					<div class="main-category__item">
-						<a href="">
+						<a href="catalog.html">
 							<h3 class="main-category__item-title">Property by the sea</h3>
 						</a>
 					</div>
 					<div class="main-category__item">
-						<a href="">
+						<a href="catalog.html">
 							<h3 class="main-category__item-title">Special offers</h3>
 						</a>
 					</div>
 					<div class="main-category__item">
-						<a href="">
+						<a href="sol-services.html">
 							<h3 class="main-category__item-title">Investments</h3>
 						</a>
 					</div>

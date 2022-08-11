@@ -25,8 +25,19 @@
     }
 }
 
+@media (min-width: 991px) {
+    .header .dropdown-toggle::after {
+        display: none;
+    }    
+}
+
 .header .dropdown-toggle::after {
-    display: none;
+    border: none;
+    width: 16px;
+    height: 6px;
+    vertical-align: middle;
+    filter: contrast(20);
+    background: url('../img/arrow-range.svg') no-repeat center/contain;
 }
 
 .header .dropdown-menu {
