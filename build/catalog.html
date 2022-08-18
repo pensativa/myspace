@@ -106,80 +106,84 @@
                     <h1 class="catalog__banner-title">We are ready to find the best property option</h1>
                     <p>you can use the property search or contact us</p>
                 </div>
-                <div class="catalog__filter">
-                    <h2 class="catalog__subtitle">Catalog</h2>
-                    <form class="filter__form">
-                        <div class="filter__form-item">
-                            <div class="filter__form-radios">
-                                <h4 class="filter__form-name">Type</h4>
-                                <input id="all" type="radio" name="type" checked>
-                                <label for="all">All</label>
-                                <input id="rent" type="radio" name="type">
-                                <label for="rent">Rent</label>
-                                <input id="sale" type="radio" name="type">
-                                <label for="sale">Sale</label>
-                            </div>
-                        </div>
-                        <div class="filter__form-item">
-                            <div class="filter__form-radios">
-                                <h4 class="filter__form-name">Stage</h4>
-                                <input id="st-all" type="radio" checked name="stage">
-                                <label for="st-all">All</label>
-                                <input id="new" type="radio" name="stage">
-                                <label for="new">New</label>
-                                <input id="resale" type="radio" name="stage">
-                                <label for="resale">Resale</label>
-                            </div>
-                            <select name="cities" id="cities" class="filter__form-select filter__input">
-                                <option value="1">All Cities</option>
-                                <option value="2">city1</option>
-                                <option value="3">city2</option>
-                            </select>
-                            
-                            <select name="areas" id="areas" class="filter__form-select filter__input">
-                                <option value="1">All Areas</option>
-                                <option value="2">Area1</option>
-                                <option value="3">Area2</option>
-                            </select>
-                            
-                            <select name="types" id="types" class="filter__form-select filter__input">
-                                <option value="1">All Types</option>
-                                <option value="2">Type1</option>
-                                <option value="3">Type2</option>
-                            </select>
-
-                            <select name="bedrooms" id="bedrooms" class="filter__form-select filter__input">
-                                <option value="0">Bedrooms</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                            </select>
-                        </div>
-                        <div class="filter__form-item">
-                            <div class="filter__form-price">
-                                <h4 class="filter__form-name">Price</h4>
-                                <input id="min" class="filter__input" type="text" placeholder="Min. Price">
-                                <input id="max" class="filter__input" type="text" placeholder="Max. Price">
-                            </div>
-                        </div>
-                            <label for="distance" class="filter__form-name">Distance to Sea</label>
-                            <div class="filter__form-range">
-                                <div class="filter__range-fill"></div>
-                                <input id="distance" type="range" class="filter__range" min="0" max="5" step="1" value="0">
-                            </div>
-                            <ul class="filter__range-val">
-                                <li>First Line</li>
-                                <li>Second Line</li>
-                                <li>Third Line</li>
-                                <li>Forth Line</li>
-                                <li>Fifth Line</li>
-                                <li>Sixth Line</li>
-                            </ul>
-                            <button class="button filter__button">Search</button>
-                    </form>
-                </div>
-            </div>                
-            <button type="button" class="no-btn filter__front-toggle">Advanced Search</button>
+            </div>
         </section>
+        
+		<section class="filter filter--page">
+			<div class="container">
+                <button type="button" class="no-btn filter__front-toggle">Advanced Search</button>
+				<h2 class="filter--front__title">Catalog</h2>
+				<form class="filter__form">
+					<div class="filter__form-item">
+						<div class="filter__form-radios">
+							<h4 class="filter__form-name">Type</h4>
+							<input id="all" type="radio" name="type" checked>
+							<label for="all">All</label>
+							<input id="rent" type="radio" name="type">
+							<label for="rent">Rent</label>
+							<input id="sale" type="radio" name="type">
+							<label for="sale">Sale</label>
+						</div>
+					</div>
+                    <div class="filter__form-item">
+						<div class="filter__form-radios">
+							<h4 class="filter__form-name">Stage</h4>
+							<input id="st-all" type="radio" checked name="stage">
+							<label for="st-all">All</label>
+							<input id="new" type="radio" name="stage">
+							<label for="new">New</label>
+							<input id="resale" type="radio" name="stage">
+							<label for="resale">Resale</label>
+						</div>
+                    </div>
+					<div class="filter__form-item">
+						<select name="cities" id="cities" class="filter__form-select filter__input">
+							<option value="1">All Cities</option>
+							<option value="2">city1</option>
+							<option value="3">city2</option>
+						</select>
+						
+						<select name="areas" id="areas" class="filter__form-select filter__input">
+							<option value="1">All Areas</option>
+							<option value="2">Area1</option>
+							<option value="3">Area2</option>
+						</select>
+						
+						<select name="types" id="types" class="filter__form-select filter__input">
+							<option value="1">All Types</option>
+							<option value="2">Type1</option>
+							<option value="3">Type2</option>
+						</select>
+						<select name="bedrooms" id="bedrooms" class="filter__form-select filter__input">
+							<option value="0">Bedrooms</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</div>
+					<div class="filter__form-item">
+						<div class="filter__form-price">
+							<h4 class="filter__form-name">Price</h4>
+							<input id="min" class="filter__input" type="text" placeholder="Min. Price">
+							<input id="max" class="filter__input" type="text" placeholder="Max. Price">
+						</div>
+					</div>
+						<label for="distance" class="filter__form-name">Distance to Sea</label>
+                        <div class="filter__form-range">
+                            <div class="filter__range-fill"></div>
+                            <input id="distance" type="range" class="filter__range" min="0" max="5" step="1" value="0">
+                        </div>
+						<ul class="filter__range-val">
+                            <li>First Line</li>
+                            <li>Second Line</li>
+                            <li>Third Line</li>
+                            <li>Forth Line</li>
+                            <li>Fifth Line</li>
+                            <li>Sixth Line</li>
+                        </ul>
+						<button class="button filter__button">Search</button>
+				</form>
+			</div>
+		</section>
         <section class="catalog__list">
             <div class="container">
                 <h2 class="catalog__list-title">Category Name</h2>

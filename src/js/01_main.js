@@ -115,7 +115,7 @@ const showMobileFilter = function() {
         return;
     }
     if(!toggleArea) {
-        toggleArea = document.querySelector('.catalog__banner');
+        toggleArea = document.querySelector('.filter--page');
     }
     toggle.onclick = function() {
         toggleArea.classList.toggle('show');

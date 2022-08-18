@@ -38,6 +38,40 @@
     font-size: 57px;
 }
 
+.filter--page {
+  position: absolute;
+  top: 260px;
+  left: 0;
+  width: 100%;
+
+
+  & .filter--front__title {
+    color: #fff;
+    margin-bottom: 15px;
+    width: 512px;
+    margin-left: auto;
+  }
+
+  & .filter__form {
+    width: 512px;
+    background-color: #fff;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    padding: 24px;
+    margin-left: auto;
+  }
+
+  & .filter__form-item {
+      padding-bottom: 15px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+  }
+
+  & #cities {
+      margin-top: 20px;
+  }
+}
+
 .filter__form-name {
     font-weight: 600;
     font-size: 21px;
@@ -328,8 +362,25 @@
     }
 }
 
+@media (max-width: 1200px) {
+  .filter--page {
+    top: 230px;
+  }
+  .filter--page .filter--front__title,
+  .filter--page .filter__form {
+      width: 440px;
+  }
+  .filter--page .filter--front__title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 992px) {
-    .filter--front .filter__form {
+  .filter--page {
+    position: static;
+  }
+    .filter .filter__form {
         border-radius: 10px;
         position: absolute;
         top: 0;
@@ -338,13 +389,14 @@
         z-index: 10;
         display: none;
     }
-    .filter--front.show .filter__form {
+    .filter.show .filter__form {
         display: flex;
     }
-    .filter--front {
+    .filter {
         background-color: $main-color;
         position: relative;
         margin-bottom: 25px;
+        top:0;
     }
     .filter__front-toggle {
       display: block;
@@ -365,7 +417,7 @@
         margin-right: 12px;
       }
     }
-    .filter--front.show .filter__front-toggle,
+    .filter.show .filter__front-toggle,
     .catalog__banner.show .filter__front-toggle {
       font-size: 0;
       position: absolute;
@@ -379,15 +431,16 @@
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
       }
     }
-    .filter--front .filter__form,
-    .filter--front .filter__form-item:first-child {
+    .filter .filter__form,
+    .filter .filter__form-item:first-child {
         flex-direction: column;
     }
-    .filter--front .filter__form-item,
-    .filter__input {
+    .filter .filter__form-item,
+    .filter__input,
+    .filter--page .filter__form {
         width: 100%;
     }
-    .filter--front .filter__button {
+    .filter .filter__button {
         width: 170px;
         margin: 20px auto 0;
         display: block;
@@ -395,5 +448,8 @@
     .filter--front__title {
         font-size: 32px;
         margin-bottom: 14px;
+    }
+    .filter--page .filter--front__title {
+      display: none;
     }
 }
